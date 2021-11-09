@@ -1,0 +1,218 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="css/checkbox.css" />
+        <link rel="stylesheet" href="css/fade-slideshow.css" />
+        <link rel="stylesheet" href="css/header-1.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="css/reset.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Clipit</title>
+    </head>
+    <body style="background: #dfdfdf">
+        <!-- Hero Section -->
+        <section
+            class="hero-section"
+            id="hero"
+            style="
+                background: url('img/gallery_bg.png');
+                background-attachment: unset;
+                background-position: center;
+                background-size: cover;
+            "
+        >
+            <!-- Header Start -->
+            <header class="site-header">
+                <div class="wrapper site-header__wrapper">
+                    <a href="#hero" class="brand">
+                        <img src="img/clipit-logo.png" alt="brand logo" />
+                    </a>
+                    <nav class="nav">
+                        <button
+                            class="nav__toggle"
+                            aria-expanded="false"
+                            type="button"
+                        >
+                            menu
+                        </button>
+                        <ul class="nav__wrapper">
+                            <li class="nav__item">
+                                <a href="#">Products</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#pricing">Pricing</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Resources</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Log in</a>
+                            </li>
+                            <li class="nav__item sign-up">
+                                <button
+                                    data-hover="Right now!"
+                                    style="margin-top: -1px; color: #98790d"
+                                >
+                                    <div>Sign Up</div>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="our-products wrapper">
+                <h1>Gallery</h1>
+                <h3>Explore the most beatiful shots made by our users.</h3>
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+            <div data-am-fadeshow="next-prev-navigation">
+                <!-- Radio -->
+                <input type="radio" name="css-fadeshow" id="slide-1" />
+                <input type="radio" name="css-fadeshow" id="slide-2" />
+                <input type="radio" name="css-fadeshow" id="slide-3" />
+
+                <!-- Slides -->
+                <div class="fs-slides">
+                    <div
+                        class="fs-slide"
+                        style="
+                            background-image: url(https://images.unsplash.com/photo-1460500063983-994d4c27756c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2550);
+                        "
+                    >
+                        <!-- Add content to images (sample) -->
+                        <div
+                            style="
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                color: white;
+                                font-family: sans-serif;
+                                text-align: center;
+                                text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                            "
+                        ></div>
+                    </div>
+                    <div
+                        class="fs-slide"
+                        style="
+                            background-image: url(https://images.unsplash.com/photo-1440557653082-e8e186733eeb?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);
+                        "
+                    ></div>
+                    <div
+                        class="fs-slide"
+                        style="
+                            background-image: url(https://images.unsplash.com/photo-1449057528837-7ca097b3520c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);
+                        "
+                    ></div>
+                </div>
+
+                <!-- Quick Navigation -->
+                <div class="fs-quick-nav">
+                    <label class="fs-quick-btn" for="slide-1"></label>
+                    <label class="fs-quick-btn" for="slide-2"></label>
+                    <label class="fs-quick-btn" for="slide-3"></label>
+                </div>
+
+                <!-- Prev Navigation -->
+                <div class="fs-prev-nav">
+                    <label class="fs-prev-btn" for="slide-1"></label>
+                    <label class="fs-prev-btn" for="slide-2"></label>
+                    <label class="fs-prev-btn" for="slide-3"></label>
+                </div>
+
+                <!-- Next Navigation -->
+                <div class="fs-next-nav">
+                    <label class="fs-next-btn" for="slide-1"></label>
+                    <label class="fs-next-btn" for="slide-2"></label>
+                    <label class="fs-next-btn" for="slide-3"></label>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="wrapper">
+                <div class="container">
+                    <div class="logo-div">
+                        <img src="img/clipit-logo.png" alt="footer logo" />
+                        <div class="social-links">
+                            <a href="#"
+                                ><img
+                                    src="img/Facebook.svg"
+                                    alt="facebook link"
+                            /></a>
+                            <a href="#"
+                                ><img
+                                    src="img/Instagram.svg"
+                                    alt="instagram link"
+                            /></a>
+                            <a href="#"
+                                ><img src="img/Twitter.svg" alt="twitter link"
+                            /></a>
+                            <a href="#" style="margin-right: 0"
+                                ><img
+                                    src="img/LinkedIn.svg"
+                                    alt="linkedin link"
+                            /></a>
+                        </div>
+                    </div>
+                    <div class="support-div">
+                        <p>Support</p>
+                        <ul>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Tutorial</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="clipit-div">
+                        <p>Clipit</p>
+                        <ul>
+                            <li><a href="#">About Clipit</a></li>
+                            <li><a href="#">Subscription plans</a></li>
+                            <li><a href="#">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-div">
+                        <p>
+                            <span
+                                class="iconify"
+                                data-icon="fluent:mail-20-filled"
+                                style="
+                                    font-size: 1.5rem;
+                                    margin-bottom: -6px;
+                                    margin-right: 5px;
+                                    color: #eee;
+                                "
+                            ></span
+                            >Stay up to date on the latest from Clipit
+                        </p>
+                        <input
+                            type="text"
+                            placeholder="Enter your email address"
+                        />
+                        <button data-hover="Thank you!" class="gradient-button">
+                            <div>Subscribe</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/header-1.js"></script>
+        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    </body>
+</html>

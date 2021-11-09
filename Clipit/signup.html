@@ -1,0 +1,218 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="css/reset.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/header-1.css" />
+
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <title>Clipit</title>
+    </head>
+    <body>
+        <!-- Hero Section -->
+        <section
+            class="hero-section"
+            id="hero"
+            style="
+                background: none;
+                background-attachment: unset;
+                height: unset;
+            "
+        >
+            <!-- Header Start -->
+            <header
+                class="site-header"
+                style="
+                    position: fixed;
+                    width: 100%;
+                    background: linear-gradient(
+                        45deg,
+                        red,
+                        #e3465b,
+                        #db9247,
+                        #dbd147
+                    );
+                    background: -o-linear-gradient(
+                        45deg,
+                        red,
+                        #e3465b,
+                        #db9247,
+                        #dbd147
+                    );
+                    background-size: 400%;
+                    background-position: center;
+                "
+            >
+                <div class="wrapper site-header__wrapper">
+                    <a href="index.html" class="brand">
+                        <img src="img/clipit-logo.png" alt="brand logo" />
+                    </a>
+                    <nav class="nav">
+                        <button
+                            class="nav__toggle"
+                            aria-expanded="false"
+                            type="button"
+                        >
+                            menu
+                        </button>
+                        <ul class="nav__wrapper">
+                            <li class="nav__item">
+                                <a href="#">Products</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#pricing">Pricing</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Resources</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Log in</a>
+                            </li>
+                            <li class="nav__item sign-up">
+                                <button
+                                    data-hover="Right now!"
+                                    style="margin-top: -1px; color: #98790d"
+                                >
+                                    <div>Sign Up</div>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="signup__container">
+                <div class="image-wrapper"></div>
+                <div class="signup__text-wrapper">
+                    <div class="signup__classic">
+                        <div class="signup__title">Sign Up</div>
+                        <div class="inputs">
+                            <input type="text" placeholder="Email Address" />
+                            <input type="text" placeholder="Set Password" />
+                        </div>
+                        <div class="submit">
+                            <button
+                                data-hover="Right now!"
+                                style="padding: 0.5rem 2.5rem; color: #c93d05"
+                                class="toApp"
+                                onclick="linking()"
+                            >
+                                <div class="toApp">Sign Up</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="signup__social">
+                        <div class="connect">or Connect with Social Media</div>
+                        <div class="facebook">
+                            <button
+                                data-hover="Go Facebook!"
+                                style="padding: 0.5rem 2.5rem; color: #c93d05"
+                                class="toApp"
+                                onclick="linking()"
+                            >
+                                <div class="toApp">Continue with Facebook</div>
+                            </button>
+                        </div>
+                        <div class="google">
+                            <button
+                                data-hover="Go Google!"
+                                style="padding: 0.5rem 2.5rem; color: #c93d05"
+                                class="toApp"
+                                onclick="linking()"
+                            >
+                                <div class="toApp">Continue with Google</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="login">
+                        <p>
+                            Already have an account?
+                            <span
+                                ><a href="login.html" style="color: #db9247"
+                                    >Log in</a
+                                ></span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <div class="container">
+                    <div class="logo-div">
+                        <img src="img/clipit-logo.png" alt="footer logo" />
+                        <div class="social-links">
+                            <a href="#"
+                                ><img
+                                    src="img/Facebook.svg"
+                                    alt="facebook link"
+                            /></a>
+                            <a href="#"
+                                ><img
+                                    src="img/Instagram.svg"
+                                    alt="instagram link"
+                            /></a>
+                            <a href="#"
+                                ><img src="img/Twitter.svg" alt="twitter link"
+                            /></a>
+                            <a href="#" style="margin-right: 0"
+                                ><img
+                                    src="img/LinkedIn.svg"
+                                    alt="linkedin link"
+                            /></a>
+                        </div>
+                    </div>
+                    <div class="support-div">
+                        <p>Support</p>
+                        <ul>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Tutorial</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="clipit-div">
+                        <p>Clipit</p>
+                        <ul>
+                            <li><a href="#">About Clipit</a></li>
+                            <li><a href="#">Subscription plans</a></li>
+                            <li><a href="#">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-div">
+                        <p>
+                            <span
+                                class="iconify"
+                                data-icon="fluent:mail-20-filled"
+                                style="
+                                    font-size: 1.5rem;
+                                    margin-bottom: -6px;
+                                    margin-right: 5px;
+                                    color: #eee;
+                                "
+                            ></span
+                            >Stay up to date on the latest from Clipit
+                        </p>
+                        <input
+                            type="text"
+                            placeholder="Enter your email address"
+                        />
+                        <button data-hover="Thank you!" class="gradient-button">
+                            <div>Subscribe</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/header-1.js"></script>
+        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    </body>
+</html>
